@@ -69,7 +69,7 @@ function ComplexObjects() {
             <div className="row">
                 <div className="col-4">
                     <h3>{contact.firstName} {contact.lastName}</h3>
-                    <ComplexObjectsFav />
+                    <ComplexObjectsFav fav={contact.isFavorite} handleClick={toggleFavorite} />
                     <p>{contact.phone}</p>
                     <p>{contact.email}</p>
                 </div>
@@ -78,10 +78,15 @@ function ComplexObjects() {
     )
 }
 
-function ComplexObjectsFav() {
+function ComplexObjectsFav({fav, handleClick}) {
+    console.log(fav)
+    console.log(handleClick)
+
+    let favorite = fav ? "favoriteTrue" : "favoriteFalse"
+
     return (
         <div className="">
-            <div className="div">X</div>
+            <div onClick={handleClick} className={`text-center ${favorite}`}>X</div>
         </div>
     )
 }
