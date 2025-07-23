@@ -5,7 +5,7 @@ import MappingUpdate from "./components/MappingUpdate"
 import State from "./components/State"
 import StateTernary from "./components/StateTernary"
 import TernaryPractice from "./components/TernaryPractice"
-
+import './App.css'
 
 function App() {
 
