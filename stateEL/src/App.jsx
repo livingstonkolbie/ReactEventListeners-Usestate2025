@@ -7,6 +7,7 @@ import StateTernary from "./components/StateTernary"
 import TernaryPractice from "./components/TernaryPractice"
 import './App.css'
 import ConditionalRendering from "./components/ConditionalRendering"
+import Forms from "./components/Forms"
 
 function App() {
 
@@ -19,7 +20,8 @@ function App() {
       {/* <TernaryPractice /> */}
       {/* <StateTernary /> */}
       {/* <ComplexState /> */}
-      <ConditionalRendering />
+      {/* <ConditionalRendering /> */}
+      <Forms />
     </div>
   )
 }
